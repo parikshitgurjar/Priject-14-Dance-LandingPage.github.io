@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Noto+Serif:wght@400;700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@500&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* xoxoxo MAIN IMAGE PART xoxoxoxox */
+/* xoxoxo MAIN IMAGE PART xoxoxoxox */
+/* xoxoxo MAIN IMAGE PART xoxoxoxox */
+
+
+.main_image img
+{
+    width:450px;
+    height:auto;
+    z-index:-1; 
+    position:fixed;
+    left:0;
+}
+
+/* xoxoxo NAVIGATION_BAR xoxoxox */
+/* xoxoxo NAVIGATION_BAR xoxoxox */
+/* xoxoxo NAVIGATION_BAR xoxoxox */
+nav
+{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    /* background-color: rgba(187, 147, 87, 0.681); */
+    height:80px;
+}
+
+
+.logo img
+{
+    width:100px;
+    height:45px;
+    background-color: rgb(45, 43, 43);
+    border-radius: 50px;
+    padding:2px;
+}
+
+
+.nav_right_side /* xoxo nav_right_side include hr line and list items xoxo */
+{
+    display:flex;
+    align-items: center;
+}
+
+.hr_line
+{
+    width:250px;
+    height:3px;
+    background-color: rgb(53, 53, 51);
+    margin: 20px;
+    
+
+}
+nav ul
+{
+    /* background-color: rgba(127, 255, 212, 0.308); */
+}
+
+nav ul li 
+{
+    display:inline-block;
+    margin-right:30px;
+    margin-left:20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav ul li a
+{
+    list-style: none;
+    text-decoration: none;
+    color:rgb(77, 71, 71);
+    font-family: Poppins;
+    padding:8px;
+    font-size: 20px;
+}
+nav ul li a:hover
+{
+    background-color: rgb(156, 164, 164);
+    color:aliceblue;
+    cursor:pointer;
+    border-radius: 50px;
+}
+
+.menu_button
+{
+    color:rgb(24, 23, 23);
+    font-size: 25px;
+    cursor:pointer;
+    display:none;
+}
+#Click
+{
+    display:none;
+}
+
+/* xoxoxo  NAVIGATION PART RESPONSIVENESS xoxoxxo */
+/* xoxoxo  NAVIGATION PART RESPONSIVENESS  xoxoxo */
+
+@media(max-width:940px)
+{
+    nav ul
+    {
+        position:fixed;
+        top:80px;
+        left:-100%;
+        height:100vh;
+        width:100%;
+        background-color:rgba(52, 48, 55, 0.96);
+        display:flex;
+        flex-direction: column;
+        text-align: center;   
+    }
+    #Click:checked ~ .nav_right_side ul
+    {
+        left:0%;
+        transition: all 0.8s ease;
+        position:absolute;
+        z-index: 1;
+    }
+    nav ul li a
+    {
+        color:white;
+    }
+
+
+
+    nav ul li
+    {
+        margin:40px 0px;
+    }
+   
+    .hr_line
+    {
+        display:none;
+    }
+
+    .menu_button
+    {
+        display:block;
+    }
+}
+    /* xoxoxo  NAVIGATION PART ENDS HERE xoxoxxo */
+    /* xoxoxo  NAVIGATION PART ENDS HERE  xoxoxo */
+
+
+
+/* xoxoxo CONTENT PART  xoxoxo CONTENT PART xoxoxoxox */
+/* xoxoxo CONTENT PART  xoxoxo CONTENT PART xoxoxoxox */
+/* xoxoxo CONTENT PART  xoxoxo CONTENT PART xoxoxoxox */
+/* xoxoxo CONTENT PART  xoxoxo CONTENT PART xoxoxoxox */
+
+
+.content_part 
+{
+    width:910px;
+    position:fixed;
+    right:0px;
+    /* background-color: salmon; */
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+}
+.part_1
+{
+    /* background-color: rgb(255, 0, 0); */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:0px 40px 0px 40px;
+}
+.part_1_left
+{
+    display:flex;
+    flex-direction: column;
+    /* background-color: aliceblue; */
+}
+.part_1 h1
+{
+    font-size: 100px;
+    line-height: 80px;
+    font-family:Merriweather;
+    font-weight: bolder;
+				
+}
+.h1_1
+{
+    font-size: 100px;
+    color: white;
+    padding:5px;
+	text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+}
+
+
+
+.h1_2
+{
+    padding-left: 90px;
+    padding-top: 10px;
+}
+
+.part_1_mid
+{
+    /* background-color: aliceblue; */
+    padding-right: 200px;
+    font-family:Merriweather;
+
+}
+
+.part_1 h3
+{
+    font-size: 35px;
+    line-height: 30px;
+    color:rgb(93, 93, 93);
+}
+
+.social_media img
+{
+    margin:20px 0px 10px 0px;
+}
+
+
+/* xoxoxox MID part xoxoxoxox */
+
+.MID_part button
+{
+    float:right;
+    margin-right: 50px;
+    font-size: 22px;
+    background-color: rgb(73, 73, 73);
+    color:aliceblue;
+    font-family:Poppins;
+    padding:10px 30px 10px 30px;
+    margin-top: 20px;
+}
+.MID_part button:hover
+{
+    background-color: #000;
+}
+
+/* xoxoxo part 2 xoxoxox */
+
+.part_2
+{
+    /* background-color: aquamarine; */
+    margin-top:10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.steps-vertical
+{
+    /* background-color: rgb(174, 147, 199); */
+    width:fit-content;
+}
+.circle
+{
+    background-color: rgb(48, 48, 49);
+    border-radius: 50px;
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right: 15px;
+}
+.step
+{
+    margin:20px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+
+.steps-vertical .step:hover
+{
+    color:rgb(105, 5, 14);
+    cursor:pointer;
+}
+.steps-vertical .circle:hover
+{
+    background-color:rgb(105, 5, 14);
+    color:rgb(105, 5, 14);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+.text_photo 
+{
+    /* background-color: rgb(140, 140, 230); */
+    position:relative;
+    overflow: hidden;
+}
+
+
+.text_photo .comma 
+{
+    position:absolute;
+    font-size: 100px;
+    width:fit-content;
+    font-family: Palanquin;
+    top:-30px;
+    left:10px;
+   
+}
+.para
+{
+    width:480px;
+    font-size: 18px;
+    margin-top: 50px;
+    font-family: Poppins;
+}
+.text_photo img
+{
+    width:450px;
+    margin-top:10px;
+}
+
+.arrow img
+{
+    width:50px;
+    height:150px;
+    margin-top: 50px;
+    cursor:pointer;
+}
+
+
+
+
+
+@media (max-width:940px)
+{
+    .main_image img
+    {
+        display:none;
+    }
+    .content_part 
+    {
+        position:relative;
+    }
+}
+
